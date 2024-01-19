@@ -2,24 +2,37 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    display: flex;
 }
 
-#kalat {
+#kokonaisuus {
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+img {
     position: relative;
+    height: auto;
+    width: 100vw;
 }
 
 #siika {
     position: absolute;
-    top: 60px;
-    left: 40px;
-    font-size: 40px;
-    color: rgb(0, 38, 255);
-    text-shadow: 0 0 40px rgb(0, 0, 0);
+    top: 150px;
+    left: 90px;
+    font-size: 80px;
+    color: rgb(0, 4, 31);
+    text-shadow: 0 0 40px rgb(255, 255, 255);
 }
-img {
-    max-height: 200px;
-    height: auto;
+
+@media (min-width:700px) {
+    img{
+        width: 50vw;
+    }
+    #siika{
+        width: 30vw;
+    }
+
 }
 
 legend {
@@ -32,7 +45,8 @@ legend {
     min-width: 20px;
 }
 
-form {
+.form-structure {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,11 +55,49 @@ form {
     margin: auto;
 }
 
-#e-mail:invalid {
+.form-structure input[type='text'] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-structure input[type='email']{
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-structure input[type='tel']{
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-structure input[type='password']{
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+#e-mail:invalid,
+#password:invalid {
     border: 2px solid  red;
 }
 
-#e-mail:valid {
+#e-mail:valid,
+#password:valid {
     border: 2px solid green;
 }
 

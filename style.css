@@ -91,6 +91,32 @@ legend {
     font-size: 14px;
 }
 
+.form-structure label {
+    font-style: italic;
+}
+
+.form-structure button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: #5995DA;
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+.form-structure button:hover {
+    background-color: #76AEED;
+  }
+  
+.form-structure button:active {
+    background-color: #407FC7;
+  }
+
 #e-mail:invalid,
 #password:invalid {
     border: 2px solid  red;

@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#kalat {
+    position: relative;
+}
+
+#siika {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    font-size: 40px;
+    color: rgb(0, 38, 255);
+    text-shadow: 0 0 40px rgb(0, 0, 0);
+}
+img {
+    max-height: 200px;
+    height: auto;
+}
+
+legend {
+    font-size: large;
+    font-weight: bold;
+}
+
+#tumma {
+    background-color: black;
+    min-width: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   
+    margin: auto;
+}
+
+#e-mail:invalid {
+    border: 2px solid  red;
+}
+
+#e-mail:valid {
+    border: 2px solid green;
+}
+
+
